@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box 가로배치 01</title>
+    <link rel="stylesheet" href="./reset.css">
+    <style>
+        h1 {
+            margin: 80px 0;
+            text-align: center;
+        }
+
+        h2 {
+            margin: 40px 0 20px 0;
+            text-align: center;
+        }
+
+        p {
+            margin: 0 0 40px 0;
+            text-align: center;
+        }
+
+
+        .box {
+            background: #999;
+        }
+
+        .inner {
+            width: 1200px;
+            margin: 0 auto;
+            background: #ddd;
+        }
+
+        .con01 {
+            display: flex;
+            gap: 30px;
+        }
+
+        .con02 {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .con03 {
+            display: flex;
+            justify-content: center;
+        }
+
+        .con04 {
+            display: flex;
+        }
+
+        .con04 .box03 {
+            margin: 0 0 0 auto;
+        }
+
+        .con05 {
+            display: flex;
+        }
+
+        .con05 .box02 {
+            margin: 0 0 0 auto;
+        }
+
+        .con06 {
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .con06 .box01 {
+            height: 100px;
+        }
+
+        .con06 .box02 {
+            position: absolute;
+
+            left: 50%;
+            transform: translate(-50%, 0);
+        }
+
+        .con07 {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .con07 .box01 {
+            width: 300px;
+        }
+
+        .con07 .box03 {
+            display: flex;
+            justify-content: flex-end;
+            width: 300px;
+        }
+
+        .con08 {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .con08 .box01 {
+            flex: 1;
+        }
+
+        .con08 .box03 {
+            flex: 1;
+            text-align: right;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>box01</h1>
+
+    <h2>박스 가로배치 01</h2>
+    <p>기본 flex 가로배치</p>
+
+    <div class="inner con01">
+        <div class="box">01</div>
+        <div class="box">02</div>
+        <div class="box">03</div>
+    </div>
+
+
+    <h2>박스 가로배치 02</h2>
+    <p>flex 양쪽배치</p>
+
+    <div class="inner con02">
+        <div class="box">01</div>
+        <div class="box">02</div>
+        <div class="box">03</div>
+    </div>
+
+
+    <h2>박스 가로배치 03</h2>
+    <p>flex 가운데로 모아놓기</p>
+
+    <div class="inner con03">
+        <div class="box">01</div>
+        <div class="box">02</div>
+        <div class="box">03</div>
+    </div>
+
+
+    <h2>박스 가로배치 04</h2>
+    <p>flex 마지막 박스만 오른쪽에 붙이기</p>
+
+    <div class="inner con04">
+        <div class="box box01">01</div>
+        <div class="box box02">02</div>
+        <div class="box box03">03</div>
+    </div>
+
+
+    <h2>박스 가로배치 05</h2>
+    <p>flex 2번 3번 박스만 오른쪽에 붙이기</p>
+
+    <div class="inner con05">
+        <div class="box box01">01</div>
+        <div class="box box02">02</div>
+        <div class="box box03">03</div>
+    </div>
+
+
+    <h2>박스 가로배치 06</h2>
+    <p>flex 박스를 진짜 가운데로</p>
+
+    <div class="inner con06">
+        <div class="box box01">01</div>
+        <div class="box box02">02</div>
+        <div class="box box03">xxxxxxxxxxxxxxxxxxxxxxxxxxxx</div>
+    </div>
+
+
+    <h2>박스 가로배치 07</h2>
+    <p>flex 박스를 진짜 가운데로</p>
+
+    <div class="inner con07">
+        <div class="box box01">01</div>
+        <div class="box box02">02</div>
+        <div class="box box03">xxxxxxxxxxxxxxxxxxxxxxxxxxxx</div>
+    </div>
+
+
+    <h2>박스 가로배치 08</h2>
+    <p>flex 박스를 진짜 가운데로</p>
+
+    <div class="inner con08">
+        <div class="box box01">01</div>
+        <div class="box box02">02</div>
+        <div class="box box03">xxxxxxxxxxxxxxxxxxxxxxxxxxxx</div>
+    </div>
+</body>
+
+</html>
