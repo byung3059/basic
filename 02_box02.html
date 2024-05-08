@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box 가로배치 02 - float</title>
+    <link rel="stylesheet" href="./reset.css">
+    <style>
+        h1 {
+            margin: 80px 0;
+            text-align: center;
+        }
+
+        hr {
+            margin: 40px 0;
+        }
+
+        .inner {
+            width: 1200px;
+            margin: 0 auto;
+        }
+
+        .con01 {
+            background: #ddd;
+            /* overflow: hidden; */
+
+        }
+
+        .con01 .box {
+            float: left;
+            width: 33.33333333333%;
+            padding: 0 15px;
+            background: #999;
+        }
+
+        .clearfix::after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+
+        .con02 {
+            text-align: center;
+            font-size: 0;
+            background: #ddd;
+        }
+
+        .con02 .box {
+            display: inline-block;
+            width: 100px;
+            text-align: left;
+            font-size: 16px;
+            background: #999;
+        }
+
+        .con03 {
+            position: relative;
+            background: #ddd;
+        }
+
+        .con03 .box {
+            width: 100px;
+            background: #999;
+        }
+
+        .con03 .box01 {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        .con03 .box02 {
+            margin: 0 auto;
+        }
+
+        .con03 .box03 {
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>box02</h1>
+
+
+    <hr />
+
+    <div class="inner con01 clearfix">
+        <div class="box box01">01</div>
+        <div class="box box02">02</div>
+        <div class="box box03">03</div>
+        <!-- <div style="clear:both"></div> -->
+    </div>
+    <div class="g">xxxxxxxxxxxxxxxx</div>
+
+
+    <hr />
+
+    <div class="inner con02">
+        <div class="box box01">01</div>
+        <div class="box box02">02</div>
+        <div class="box box03">03</div>
+        <!-- <div style="clear:both"></div> -->
+    </div>
+
+
+    <hr />
+
+    <div class="inner con03">
+        <div class="box box01">01</div>
+        <div class="box box02">02</div>
+        <div class="box box03">03</div>
+        <!-- <div style="clear:both"></div> -->
+    </div>
+</body>
+
+</html>
